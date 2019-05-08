@@ -23,64 +23,67 @@
 
 <body>
     <!-- This is used for testing: <button id="StartBtn">Start Ad</button> -->
+    <!-- <a id="galacticCruisesLink" href="GalacticCruisesBookingSite.html"> -->
 
-    <a id="galacticCruisesLink" href="GalacticCruisesBookingSite.html">
-
+    
+    <div id="galacticCruisesContainer">
+        
         <div id="cruiseAd">
 
             <!-- NOTE:  to have the starfield appear to advance toward us, use a time elapse on increasing the background size of an image.
-            An example here for part of how to do it.  Here the result is a image area 300 by 300, the img is another and the cx and cy are
-                multiplication values, in effect, magnifying the image...
-             result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+    An example here for part of how to do it.  Here the result is a image area 300 by 300, the img is another and the cx and cy are
+        multiplication values, in effect, magnifying the image...
+     result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
 
-                for use we would have something like: currentMainImage.style.backgroundSize = currentWidth * 10 + px etc. etc.
+        for use we would have something like: currentMainImage.style.backgroundSize = currentWidth * 10 + px etc. etc.
 
-                AND we can do the same in reverse for the ship!!
+        AND we can do the same in reverse for the ship!!
 
-                further, for new space images, we can have them fade in as the old one fades out.
-                -->
-    <!-- the concept:  Galactic Cruiselines! "Space, The Final Frontier!   Now YOU can explore the heavens,-->
-    <!-- First test.  Adding space field-->
-    <div class="spaceFields" id="Space1"></div>
-    <div class="GalacticText" id="TitleText">Galactic Cruise Lines</div>
-    <div class="GalacticText" id="Text1">In a Galaxy, Far Far Away...</div>
-    <div class="GalacticText" id="Text2">Explore the heavens</div>
-    <div class="GalacticText" id="Text3">See the unbelieveable</div>
-    <div class="GalacticText" id="Text4">Be Awed by the Splender of the Universe!</div>
-    <div class="farPlanets" id="Wonder1"></div>
-    <div class="farPlanets" id="Wonder2"></div>
-    <div class="farPlanets" id="Wonder3"></div>
-    <div class="farPlanets" id="Wonder4"></div>
-    <div class="GalacticText" id="Text5">Our Luxury Space Liners will get you there in Comfort and Style!</div>
-    <div class="spaceFields" id="Space2"></div>
-    <div id="LuxLiner"></div>
-    <div class="GalacticText" id="Text6">Tour the most famous Nebulas</div>
-    <!--Tour the nebulas,-->
-    <div class="nebula" id="Nebula1"></div>
-    <div class="GalacticText" id="Text7">See it all through your own cabin viewport <strong>OR...</strong></div>
-    <!-- See it all through your own cabin's viewport OR...-->
-    <div class="AlienPlanet" id="Viewport"></div>
-    <div class="GalacticText" id="Text8">Get a closer look!  Take a walk on the OUTSIDE!</div>
-    <!--Get a closer, more personal look!  Take a walk on the outside!-->
-    <div id="SpaceWalker"></div>
-    <div class="GalacticText" id="Text9">Go on excursions to see strange and beautiful alien planets.</div>
-    <!-- Take an excursion to see strange and beautiful alien planets.-->
-    <div class="AlienPlanet" id="AlienPlanet1"></div>
-    <div class="AlienPlanet" id="AlienPlanet2"></div>
-    <div class="AlienPlanet" id="AlienPlanet3"></div>
-    <!--majestic views-->
-    <div class="GalacticText" id="Text10">Majestic views are all around</div>
-    <div class="nebula" id="Nebula2"></div>
-    <div class="GalacticText" id="Text11">You know it's time...</div>
+        further, for new space images, we can have them fade in as the old one fades out.
+        -->
+            <!-- the concept:  Galactic Cruiselines! "Space, The Final Frontier!   Now YOU can explore the heavens,-->
+            <!-- Note: button has z of 20 to make sure it is on top-->
+            <div id="playButton"></div>
+            <div class="spaceFields" id="Space1"></div>
+            <div class="GalacticText" id="TitleText">Galactic Cruise Lines</div>
+            <div class="GalacticText" id="Text1">In a Galaxy, Far Far Away...</div>
+            <div class="GalacticText" id="Text2">Explore the heavens</div>
+            <div class="GalacticText" id="Text3">See the unbelieveable</div>
+            <div class="GalacticText" id="Text4">Be Awed by the Splender of the Universe!</div>
+            <div class="farPlanets" id="Wonder1"></div>
+            <div class="farPlanets" id="Wonder2"></div>
+            <div class="farPlanets" id="Wonder3"></div>
+            <div class="farPlanets" id="Wonder4"></div>
+            <div class="GalacticText" id="Text5">Our Luxury Space Liners will get you there in Comfort and Style!</div>
+            <div class="spaceFields" id="Space2"></div>
+            <div id="LuxLiner"></div>
+            <div class="GalacticText" id="Text6">Tour the most famous Nebulas</div>
+            <!--Tour the nebulas,-->
+            <div class="nebula" id="Nebula1"></div>
+            <div class="GalacticText" id="Text7">See it all through your own cabin viewport <strong>OR...</strong></div>
+            <!-- See it all through your own cabin's viewport OR...-->
+            <div class="AlienPlanet" id="Viewport"></div>
+            <div class="GalacticText" id="Text8">Get a closer look!  Take a walk on the OUTSIDE!</div>
+            <!--Get a closer, more personal look!  Take a walk on the outside!-->
+            <div id="SpaceWalker"></div>
+            <div class="GalacticText" id="Text9">Go on excursions to see strange and beautiful alien planets.</div>
+            <!-- Take an excursion to see strange and beautiful alien planets.-->
+            <div class="AlienPlanet" id="AlienPlanet1"></div>
+            <div class="AlienPlanet" id="AlienPlanet2"></div>
+            <div class="AlienPlanet" id="AlienPlanet3"></div>
+            <!--majestic views-->
+            <div class="GalacticText" id="Text10">Majestic views are all around</div>
+            <div class="nebula" id="Nebula2"></div>
+            <div class="GalacticText" id="Text11">You know it's time...</div>
 
-    <!-- OK, Based on TONS of testing, it is clear that the current TimelineMax .to function will NOT
+            <!-- OK, Based on TONS of testing, it is clear that the current TimelineMax .to function will NOT
      recognize the id of a span element inside of a div element.  I can get such a thing to show normally
      But the .to function will NOT do anything with it at all.  It is as if it can't find it.
     THEREFORE, I'm going back to my simple expanding for the GrounderText rather than try to have its
     letters blow up. SIGH..-->
-    <!-- <div class="GalacticText"><span id="G01">STOP THIS MESS PLEASE</span></div> -->
-    <!--     <span class="GrounderText" id="G01">S</span><span class="GrounderText" id="G02">T</span> -->
-    <!--
+            <!-- <div class="GalacticText"><span id="G01">STOP THIS MESS PLEASE</span></div> -->
+            <!--     <span class="GrounderText" id="G01">S</span><span class="GrounderText" id="G02">T</span> -->
+            <!--
 
 
              New testing.. <div><span class and id> WORKS BUT the div auto places text to left rather than center.  The
@@ -91,46 +94,50 @@
         <span id="G01">S</span><span id="G02">T</span><span id="G03">O</span><span id="G04">P</span> <span id="G05">B</span><span id="G06">E</span><span id="G07">I</span><span id="G08">N</span><span id="G09">G</span> <span id="G10">A</span> <span id="G11">G</span><span id="G12">R</span><span id="G13">O</span><span id="G14">U</span><span id="G15">N</span><span id="G16">D</span><span id="G17">E</span><span id="G18">R</span><span id="G19">!</span>
     </div>
         -->
-    <!-- IT may be all about the css.  IF i do this and have two separate css sections for g01 and g02 it works.-->
-    <div>
-        <span class="GalacticText" id="G01">S</span>
-        <span class="GalacticText" id="G02">T</span>
-        <span class="GalacticText" id="G03">O</span>
-        <span class="GalacticText" id="G04">P</span>
-        <span class="GalacticText" id="G05"> </span>
-        <span class="GalacticText" id="G06">B</span>
-        <span class="GalacticText" id="G07">E</span>
-        <span class="GalacticText" id="G08">I</span>
-        <span class="GalacticText" id="G09">N</span>
-        <span class="GalacticText" id="G10">G</span>
-        <span class="GalacticText" id="G11"> </span>
-        <span class="GalacticText" id="G12">A</span>
-        <span class="GalacticText" id="G13"> </span>
-        <span class="GalacticText" id="G14">G</span>
-        <span class="GalacticText" id="G15">R</span>
-        <span class="GalacticText" id="G16">O</span>
-        <span class="GalacticText" id="G17">U</span>
-        <span class="GalacticText" id="G18">N</span>
-        <span class="GalacticText" id="G19">D</span>
-        <span class="GalacticText" id="G20">E</span>
-        <span class="GalacticText" id="G21">R</span>
-        <span class="GalacticText" id="G22">!</span>
-    </div>
-    <!--  THIS SIMPLY WON"T SHOW <div class="GalacticText"><span id="G01">S</span><span id="G02">T</span></div>-->
-    <!-- <div class="GalacticText" id="TextGrounder">STOP BEING A GROUNDER!</div> -->
-    <!--You know you are tired of being a grounder.-->
-    <div class="AlienPlanet" id="Grounder"></div>
-    <div class="GalacticText" id="Text12">Set your gaze to the Stars! Book YOUR trip with Galactic Cruise Lines Now!</div>
-    <!--Set your gaze to the Stars! Book YOUR trip with Galactic Cruiselines Now!-->
-    <div class="spaceFields" id="Space2"></div>
-    <div class="GalacticText" id="Text13">CLICK HERE TO START YOUR ADVENTURE!</div>
-    </div><!-- End cruiseAd div -->
+            <!-- IT may be all about the css.  IF i do this and have two separate css sections for g01 and g02 it works.-->
+            <div>
+                <span class="GalacticText" id="G01">S</span>
+                <span class="GalacticText" id="G02">T</span>
+                <span class="GalacticText" id="G03">O</span>
+                <span class="GalacticText" id="G04">P</span>
+                <span class="GalacticText" id="G05"> </span>
+                <span class="GalacticText" id="G06">B</span>
+                <span class="GalacticText" id="G07">E</span>
+                <span class="GalacticText" id="G08">I</span>
+                <span class="GalacticText" id="G09">N</span>
+                <span class="GalacticText" id="G10">G</span>
+                <span class="GalacticText" id="G11"> </span>
+                <span class="GalacticText" id="G12">A</span>
+                <span class="GalacticText" id="G13"> </span>
+                <span class="GalacticText" id="G14">G</span>
+                <span class="GalacticText" id="G15">R</span>
+                <span class="GalacticText" id="G16">O</span>
+                <span class="GalacticText" id="G17">U</span>
+                <span class="GalacticText" id="G18">N</span>
+                <span class="GalacticText" id="G19">D</span>
+                <span class="GalacticText" id="G20">E</span>
+                <span class="GalacticText" id="G21">R</span>
+                <span class="GalacticText" id="G22">!</span>
+            </div>
+            <!--  THIS SIMPLY WON"T SHOW <div class="GalacticText"><span id="G01">S</span><span id="G02">T</span></div>-->
+            <!-- <div class="GalacticText" id="TextGrounder">STOP BEING A GROUNDER!</div> -->
+            <!--You know you are tired of being a grounder.-->
+            <div class="AlienPlanet" id="Grounder"></div>
+            <div class="GalacticText" id="Text12">Set your gaze to the Stars! Book YOUR trip with Galactic Cruise Lines Now!</div>
+            <!--Set your gaze to the Stars! Book YOUR trip with Galactic Cruiselines Now!-->
+            <div class="spaceFields" id="Space2"></div>
+            <div class="GalacticText" id="Text13">CLICK BELOW TO START YOUR ADVENTURE!</div>
+        </div><!-- End cruiseAd div -->
 
-    <audio id="MainTheme">
-        <source src="StarWarsMainTheme.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+        <audio id="MainTheme">
+            <source src="StarWarsMainTheme.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
+    </div> <!-- End galactic cruises Container div-->
+
+    <a id="galacticCruisesLink" href="GalacticCruisesBookingSite.html">
+        START YOUR ADVENTURE!
     </a>  <!-- End galactic cruises link-->
     <!-- Link in the tween max stuff -->
     <script type="text/javascript" src="TweenMax.min.js"></script>
