@@ -27,27 +27,29 @@ window.onload = function () {
     // set up audio variable.
     myAudio = document.querySelector("#MainTheme");
 
-    /* start button used for testing
-    // Start ad button needed because auto start of audio not allowed anymore by browsers:
-    StartButton = document.getElementById("StartBtn");
+
+    // StartClicker needed because auto start of audio not allowed anymore by browsers:
+    StartButton = document.getElementById("playButton");
     StartButton.style.cursor = "pointer";
     StartButton.addEventListener("click", StartAd, false);
-    */
+
 
     // galacticCruisesLink:  need handler to stop ad before jumping to next page...
     GCLink = document.getElementById("galacticCruisesLink");
     GCLink.style.cursor = "pointer";
     GCLink.addEventListener("click", StopAd, false);
+    GCLink.style.display = "none";
+    
 
     // instanciate timeline and pause
-    myTL1 =new TimelineMax({ onRepeat: AudioReset, repeat: -1 });
+    myTL1 = new TimelineMax({ onRepeat: AudioReset, repeat: -1 });
     myTL1.pause();  // pause timeline till set up so it won't be counting time in the meantime!
 
     // call function to set up timeline
     setupTimeline();
 
     // Start ad if NOT in test mode.
-    StartAd();
+    //StartAd();
 
 }// end onload
 
@@ -80,12 +82,19 @@ function AudioReset() {
 function StartAd() {
     "use strict";
 
+    // remove start button
+    StartButton.disabled = true;
+    StartButton.hidden = true;
+
     // Call Audio Reset just before we start.  Then our onRepeat will call it every loop.
     AudioReset();
 
     // start the animation:
     myTL1.pause();
     myTL1.restart(true, true);
+
+    GCLink.style.display = "block";
+   
 
 } // end function StartAd
 
@@ -105,7 +114,7 @@ function StopAd() {
 
     // stop the animation:
     myTL1.pause();
-    
+
 
 } // end function StartAd
 
@@ -119,8 +128,8 @@ function StopAd() {
 function setupTimeline() {
 
     // first set up first space background
+    //myTL1.to('#Space1', 2.0, { opacity: 1, backgroundSize: "920px 300px", backgroundPosition: 'center', ease: Power0.easeNone })
     myTL1.to('#Space1', 2.0, { opacity: 1, backgroundSize: "920px 300px", backgroundPosition: 'center', ease: Power0.easeNone })
- 
         .to('#TitleText', 0.1, { opacity: 0, scale: 0.0001, ease: Power0.easeNone }, '+=1.0')
         .to('#TitleText', 0.1, { opacity: 1, ease: Power0.easeNone })
         .to('#TitleText', 6.0, { scale: 1, ease: Power0.easeNone })
@@ -240,8 +249,8 @@ function setupTimeline() {
         .to('#G20', 0.1, { opacity: 1, ease: Power0.easeNone }, 'myGText1-=1.0')
         .to('#G21', 0.1, { opacity: 1, ease: Power0.easeNone }, 'myGText1-=1.0')
         .to('#G22', 0.1, { opacity: 1, ease: Power0.easeNone }, 'myGText1-=1.0')
-    
-    
+
+
         .to('#G01', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
         .to('#G02', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
         .to('#G03', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
@@ -264,8 +273,8 @@ function setupTimeline() {
         .to('#G20', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
         .to('#G21', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
         .to('#G22', 3.0, { scale: 1, ease: Power0.easeNone }, 'myGText2')
-    
-    
+
+
         .to('#G01', 1.0, { opacity: 0, rotation: -10, top: -100, left: -100, scale: 10, ease: Power0.easeNone }, 'myGText3+=4.0')
         .to('#G02', 1.0, { opacity: 0, rotation: -45, top: 100, left: -100, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.9')
         .to('#G03', 1.0, { opacity: 0, rotation: -90, top: 50, left: -100, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.8')
@@ -279,18 +288,18 @@ function setupTimeline() {
         .to('#G11', 1.0, { opacity: 0, rotation: -360, top: 150, left: -100, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.0')
         .to('#G12', 1.0, { opacity: 0, rotation: 360, top: 150, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.0')
         .to('#G13', 1.0, { opacity: 0, rotation: -180, top: 400, left: 600, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.1')
-        .to('#G14', 1.0, { opacity: 0, rotation:  220, top: 100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.2')
+        .to('#G14', 1.0, { opacity: 0, rotation: 220, top: 100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.2')
         .to('#G15', 1.0, { opacity: 0, rotation: -45, top: 100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.3')
         .to('#G16', 1.0, { opacity: 0, rotation: -240, top: 250, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.4')
-        .to('#G17', 1.0, { opacity: 0, rotation:  90, top: -100, left: 700, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.5')
-        .to('#G18', 1.0, { opacity: 0, rotation:  150, top: 400, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.6')
+        .to('#G17', 1.0, { opacity: 0, rotation: 90, top: -100, left: 700, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.5')
+        .to('#G18', 1.0, { opacity: 0, rotation: 150, top: 400, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.6')
         .to('#G19', 1.0, { opacity: 0, rotation: -360, top: 350, left: 800, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.7')
         .to('#G20', 1.0, { opacity: 0, rotation: -75, top: -100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.8')
-        .to('#G21', 1.0, { opacity: 0, rotation:  400, top: -100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.9')
+        .to('#G21', 1.0, { opacity: 0, rotation: 400, top: -100, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=3.9')
         .to('#G22', 1.0, { opacity: 0, rotation: -200, top: 400, left: 1000, scale: 10, ease: Power0.easeNone }, 'myGText3+=4.0')
 
-    /* End grounder text */
-   
+        /* End grounder text */
+
 
 
         .to('#LuxLiner', 0.1, { opacity: 0, scale: 0.05 })
