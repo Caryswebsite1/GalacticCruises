@@ -1,0 +1,537 @@
+﻿/* *******************************************************************************************
+ * Copywrite:
+ * Created By: Cary Gibson
+ * Date: May 7, 2019
+ * License:  None Granted, None Allowed.
+ * No modifcations or use of this code allowed without express
+ * written permission from Cary Gibson
+ * ******************************************************************************************** */
+
+body {
+    background-color: black;
+}
+
+#galacticCruisesLink {
+    display: block;
+    background-color: black;
+    width: 920px;
+    margin: 0px auto;
+}
+
+
+#BookingTitle {
+    font-family: 'AbibasMedium';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 28px;
+    color: #9900FF;
+    text-align: center;
+}
+
+
+#cruiseAd {
+    position: relative;
+    overflow: hidden;
+    width: 920px;
+    height: 300px;
+    text-align:center;
+
+}
+
+
+
+    #cruiseAd .GalacticText {
+        position: absolute;
+        text-align: center;
+        font-family: 'AbibasMedium';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 32px;
+        color: #9900FF;
+        width: inherit;
+        top: 500px; /* most text will scroll from below */
+        left: 0;
+        text-shadow: 3px 2px 0px black; /* horizontal, virt, blur, color */
+        opacity: 1;
+        z-index: 10;
+    }
+
+    #cruiseAd #TitleText {
+        font-weight: 800;
+        font-size: 80px;
+        top: 120px; /* bring in from center */
+        opacity: 0;
+    }
+
+
+    #cruiseAd #Text1 {
+        font-weight: 800;
+        font-size: 50px;
+        top: 150px; /* bring in from center */
+        opacity: 0;
+    }
+
+
+    #cruiseAd #TextGrounder {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        opacity: 0;
+    }
+
+    /* NOTE:  doing a #cruiseAd #g01 #g02 does not work. 
+        a comma does work
+    */
+
+    #cruiseAd #G01 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 40px;
+        opacity: 0;
+        margin-right: 12px;
+    }
+
+    #cruiseAd #G02 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 70px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G03 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 110px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G04 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 150px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G05 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 190px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G06 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 230px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G07 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 270px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G08 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 310px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G09 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 350px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G10 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 390px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G11 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 430px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G12 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 470px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G13 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 510px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G14 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 550px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G15 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 590px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G16 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 630px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G17 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 670px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G18 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 710px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G19 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 750px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G20 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 790px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G21 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 830px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #cruiseAd #G22 {
+        font-weight: 800;
+        font-size: 60px;
+        top: 150px; /* bring in from center */
+        left: 870px;
+        opacity: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+
+
+
+    /*
+    #cruiseAd .GrounderText {
+        position: absolute;
+        text-align: center;
+        font-family: 'AbibasMedium';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 50px;
+        color: #9900FF;
+        width: inherit;
+        top: 150px; 
+        left: 0;
+        text-shadow: 3px 2px 0px black; 
+        opacity: 1;
+        z-index: 10;
+    }
+
+    #cruiseAd #G01 #G02 {
+        position: absolute;
+        text-align: center;
+        font-weight: 800;
+        font-size: 50px;
+        top: 150px; 
+        opacity: 1;
+        z-index: 10;
+    }
+*/
+
+
+
+#cruiseAd .spaceFields {
+    position: absolute;
+    background: no-repeat;
+    top: 0px;
+    left: 0px;
+    margin: 0px, auto;
+    z-index: 0;
+}
+
+    #cruiseAd .farPlanets {
+        position: absolute;
+        background: no-repeat;
+        top: 150px;
+        left: 1000px;
+        background-size: 50px 20px;
+        z-index: 5;
+    }
+
+
+    #cruiseAd .nebula {
+        position: absolute;
+        background: no-repeat;
+        top: 0px;
+        left: 0px;
+        background-size: 50px 20px;
+        background-position: center;
+        z-index: 5;
+    }
+
+    #cruiseAd .AlienPlanet {
+        position: absolute;
+        background: no-repeat;
+        top: 0px;
+        left: 0px;
+        background-size: 50px 20px;
+        background-position: center;
+        z-index: 7;
+    }
+
+    #cruiseAd #Space1 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/LittleBigStarfield.jpeg");
+        background-size: 920px 300px;
+        background-position: center;
+        background-repeat: repeat-x; /* so it will beable to scroll horizontally and repeat itself.*/
+        opacity: 0;
+    }
+
+    #cruiseAd #Wonder1 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/Wonder1.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #Wonder2 {
+        width: inherit;
+        height: inherit;
+        left: -1000px;
+        background-image: url("images/Wonder2.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #Wonder3 {
+        width: inherit;
+        height: inherit;
+        top:-500px;
+        background-image: url("images/Wonder3.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+
+    #cruiseAd #Wonder4 {
+        width: inherit;
+        height: inherit;
+        left: -1000px;
+        top: -500px;
+        background-image: url("images/Wonder6.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+
+
+    #cruiseAd #LuxLiner {
+        position: absolute;
+        top: 150;
+        left: 450;
+        background: no-repeat;
+        width: inherit;
+        height: inherit;
+        background-image: url("images/LuxLinerTrans.png");
+        background-size: 920px 300px;
+        background-position: center;
+        opacity: 0;
+        z-index: 10;
+    }
+
+    #cruiseAd #Nebula1 {
+        width: inherit;
+        height: inherit;
+        top: 0px;
+        left: 0px;
+        background-image: url("images/Nebula1.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #Viewport {
+        background: no-repeat;
+        width: inherit;
+        height: inherit;
+        top: 0px;
+        left: 0px;
+        background-image: url("images/shipViewport.jpg");
+        background-position: center;
+        background-size: 920px 300px;
+        opacity: 0;
+        z-index: 8;
+    }
+
+
+
+#cruiseAd #SpaceWalker {
+    position: absolute;
+    background: no-repeat;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+    background-image: url("images/spaceWalk.jpg");
+    background-position: center;
+    background-size: 920px 300px;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+    #cruiseAd #AlienPlanet1 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/AlienPlanet1.jpg");
+        background-size: 50px 20px;
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #AlienPlanet2 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/AlienPlanet2.jpg");
+        background-size: 50px 20px;
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #AlienPlanet3 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/AlienPlanet3.jpg");
+        background-size: 50px 20px;
+        background-position: center;
+        opacity: 0;
+    }
+
+    #cruiseAd #Space2 {
+        width: inherit;
+        height: inherit;
+        background-image: url("images/Starfield2Fixed.jpg");
+        background-size: 920px 300px;
+        background-position: center;
+        opacity: 0;
+    }
+
+
+    #cruiseAd #Nebula2 {
+        width: inherit;
+        height: inherit;
+        top: 0px;
+        left: 0px;
+        background-image: url("images/Nebula2.jpg");
+        background-position: center;
+        opacity: 0;
+    }
+
+
+
+#cruiseAd #Grounder {
+    width: inherit;
+    height: inherit;
+    background-image: url("images/Ground1.jpg");
+    background-position: center;
+    background-size: 50px 20px;
+    opacity: 0;
+}
